@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-color: silver;
+            padding: 15px 10px;
+        }
+        header{
+            background-color: white;
+            text-align: center;
+            font-family: Roboto;
+            padding: 40px;
+        
+        }
+        header>p{
+            font-size: 14px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: black;
+            position: sticky;
+            top: 0;
+        }
+
+        li{
+            display:inline-block;
+            color: white;
+            
+        
+        }
+        a:hover{
+            background-color: green;
+           
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 12px;
+            display: inline-block;
+
+        }
+        .active{
+            background-color: green;
+            }
+        .main{
+            padding: 30px;
+        }
+        .main::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .block1{
+            background-color: white;
+            padding: 15px 10px;
+            margin: 0 0 20px 0;
+            border-radius: 5px;
+            
+        }
+        .content{
+            width: 65%;
+            float: left;
+        }
+        .rightsidebar{
+            width: 35%;
+            float: left;
+            top: 43px;
+            position: sticky;
+            z-index: -1;
+
+        }
+        img{
+            width: 100%;
+            padding: 10px;
+        }
+
+        footer{
+            background-color: white;
+            color: rgb(63, 61, 61);
+            padding: 20px 15px 15px 15px;
+            border-radius: 5px;
+        }
+        .block2{
+            padding: 15px 10px;
+            background-color: white;
+            margin: 0 0 20px 20px;
+            border-radius: 5px;
+        }
+        .img1{
+            height: 300px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header><h1>My Website</h1>
+    <p>Resize the browser window to see the effect</p>
+    </header>
+    <nav>
+        <ul>
+            <li class="active"><a href="#">HOME</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="content">
+        <section class="block1">
+            <h2>TITLE HEADING</h2> <br>
+            <h4>Title description, Dec 7, 2017</h4> <br>
+            <img class="img1"src="background.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi fuga sapiente atque quaerat, facere officiis harum impedit pariatur odit. Porro, velit cupiditate eligendi dignissimos fugit in adipisci nemo libero dolorem. Reiciendis magnam eligendi vel, quos facere repellat itaque quis deleniti enim earum aut cumque, suscipit, architecto maiores ipsa iusto porro.</p>
+            <br>
+        </section>    
+        <section class="block1"> 
+            <h2>TITLE HEADING</h2> <br>
+            <h4>Title description, Dec 7, 2017</h4> <br>
+            <img class="img1" src="background.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi fuga sapiente atque quaerat, facere officiis harum impedit pariatur odit. Porro, velit cupiditate eligendi dignissimos fugit in adipisci nemo libero dolorem. Reiciendis magnam eligendi vel, quos facere repellat itaque quis deleniti enim earum aut cumque, suscipit, architecto maiores ipsa iusto porro.</p>
+            <br>
+        </section> 
+        <section class="block1"> 
+            <h2>TITLE HEADING</h2> <br>
+            <h4>Title description, Dec 7, 2017</h4> <br>
+            <img class="img1" src="background.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi fuga sapiente atque quaerat, facere officiis harum impedit pariatur odit. Porro, velit cupiditate eligendi dignissimos fugit in adipisci nemo libero dolorem. Reiciendis magnam eligendi vel, quos facere repellat itaque quis deleniti enim earum aut cumque, suscipit, architecto maiores ipsa iusto porro.</p>
+            <br>
+        </section> 
+        </div>
+        <div class="rightsidebar">
+            <section class="block2">
+                <h2>About Me</h2>
+                <img src="Goa.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, consectetur.</p>
+            </section>
+            <section class="block2">
+                <h2>Popular Post</h2>
+                <img src="manali.jpg" alt=""> <br>
+                <img src="manali.jpg" alt="">
+            </section>
+            <section class="block2">
+                <h3>Follow Me</h3>
+                <p>Some text..</p>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright 2021. All Rights Reserved. 
+            </p>
+        <p>Made with <span style="color: red;">&#9829;</span> by Sona Rawka</p>
+    </footer>
+
+    
+</body>
+</html>
